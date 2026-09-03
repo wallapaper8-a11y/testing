@@ -265,20 +265,20 @@
   }
 
   /* Video ko bina black bars ke full cover karein */
-  .hero video, 
-  .video-container video, 
+  @media (max-width: 768px) {
+  /* Video tour section ko normal flow me niche hi rakhne ke liye */
   video {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    min-width: 100% !important;
-    min-height: 100% !important;
+    position: static !important;
+    transform: none !important;
     width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; /* Yeh upar/niche ka black space khatam kar dega */
-    transform: translate(-50%, -50%) !important;
-    z-index: 1 !important;
+    height: auto !important;
+    max-height: 260px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    display: block !important;
+    margin: 15px auto !important;
   }
+}
 
   /* Video ke upar halka dark gradient taaki white text ekdum saaf chamke */
   .hero::after, 
