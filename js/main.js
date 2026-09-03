@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }, 500);
     }
+    // Rooms ki sabhi photos ko pehle se memory me load karne ke liye
+if (typeof roomsData !== 'undefined') {
+  roomsData.forEach(room => {
+    if (room.images && Array.isArray(room.images)) {
+      room.images.forEach(src => {
+        const img = new Image();
+        img.src = src; // Background me fetch ho jayegi
+      });
+    }
+  });
+}
   }
 
   runTypewriter();
