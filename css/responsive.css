@@ -250,3 +250,63 @@
     display: block !important;
   }
 }
+@media (max-width: 768px) {
+  /* Hero wrapper se black color hatakar height fit karein */
+  .hero, .hero-section, .video-container, .hero-wrapper {
+    position: relative !important;
+    min-height: 85vh !important;
+    background: transparent !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px 15px !important;
+  }
+
+  /* Video ko bina black bars ke full cover karein */
+  .hero video, 
+  .video-container video, 
+  video {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Yeh upar/niche ka black space khatam kar dega */
+    transform: translate(-50%, -50%) !important;
+    z-index: 1 !important;
+  }
+
+  /* Video ke upar halka dark gradient taaki white text ekdum saaf chamke */
+  .hero::after, 
+  .hero-section::after, 
+  .video-container::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.55) !important; /* Clean premium dark overlay */
+    z-index: 2 !important;
+  }
+
+  /* Text aur buttons ko video ke upar front me lana */
+  .hero-content, 
+  .hero-text, 
+  .hero > div:not(video) {
+    position: relative !important;
+    z-index: 3 !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* Text ko clean white karna taaki ache se read ho */
+  .hero h1, .hero h2, .hero p {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6) !important;
+  }
+}
