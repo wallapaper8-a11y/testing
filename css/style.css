@@ -1,3 +1,9 @@
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 /* ================= THEME C: SOFT SKY & ROYAL SAPPHIRE ================= */
 :root {
   --primary: #0284c7;             /* Vibrant Royal Sapphire Blue */
@@ -1136,12 +1142,6 @@ input:focus, select:focus {
   user-select: none;
   z-index: 100000;
 }
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
 .prev { left: 30px; }
 .next { right: 30px; }
 .close { top: 20px; right: 30px; font-size: 40px; background: transparent; }
