@@ -138,3 +138,19 @@
         height: 200px !important;
     }
 }
+/* Mobile view ke liye (Media Query) */
+@media (max-width: 768px) {
+  .about-container { /* Aapke about section ka main wrapper */
+    flex-direction: column !important;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .about-text, 
+  .about-image { /* Left content aur right image/card */
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
