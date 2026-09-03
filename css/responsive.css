@@ -184,3 +184,69 @@
     box-sizing: border-box !important;
   }
 }
+/* Mobile view ke liye clean Banquet-style layout */
+@media (max-width: 768px) {
+  /* Main section ka background clean light rakhein */
+  .about-hero, 
+  .hero-section,
+  .about-grid-layout {
+    background: #f8fafc !important; /* Soft light background */
+    padding: 20px 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: left !important;
+  }
+
+  /* Heading aur text ko clean dark color dein */
+  .about-text-content h2,
+  .about-hero h1,
+  .about-hero h2 {
+    color: #0b3b60 !important; /* Deep sapphire blue */
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .about-text-content p,
+  .lead-para {
+    color: #475569 !important; /* Readable dark grey */
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* 3 bade buttons ke badle ek clean single CTA button */
+  .about-cta-btns,
+  .hero-btns {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .about-cta-btns a,
+  .hero-btns a {
+    background-color: #0284c7 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+  }
+
+  /* Image ko text ke niche alag card ki tarah dikhayein */
+  .about-image,
+  .hero-image-container,
+  .about-grid-layout img {
+    width: 100% !important;
+    max-height: 260px !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    margin-top: 10px !important;
+    display: block !important;
+  }
+}
