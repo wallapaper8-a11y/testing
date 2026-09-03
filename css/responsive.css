@@ -138,19 +138,49 @@
         height: 200px !important;
     }
 }
-/* Mobile view ke liye (Media Query) */
 @media (max-width: 768px) {
-  .about-container { /* Aapke about section ka main wrapper */
+  /* Grid ko single column banayega taaki right side cut na ho */
+  .about-grid-layout {
+    display: flex !important;
     flex-direction: column !important;
-    display: flex;
-    width: 100%;
-    padding: 16px;
-    box-sizing: border-box;
+    width: 100% !important;
+    gap: 24px !important;
+    padding: 10px 15px !important;
+    box-sizing: border-box !important;
   }
 
-  .about-text, 
-  .about-image { /* Left content aur right image/card */
+  /* Left text aur Right image dono ko full width dega */
+  .about-text-content,
+  .about-grid-layout > div {
     width: 100% !important;
-    max-width: 100%;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Key highlights / Stats boxes ko mobile par properly wrap karega */
+  .about-stats-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .stat-box {
+    flex: 1 1 45% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Buttons ko mobile par fit rakhega */
+  .about-cta-btns {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .about-cta-btns a {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
   }
 }
