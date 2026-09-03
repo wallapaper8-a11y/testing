@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banquet Hall - HOTEL ARYAN Residency & Banquet Hall</title>
+  <link rel="icon" type="image/jpeg" href="assets/lo.jpeg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Preloader Start -->
+<div id="preloader">
+  <div class="loader-content">
+    <h1 class="hotel-title" id="typewriter-text"></h1>
+    <p class="hotel-sub">Residency & Banquet Hall</p>
+    <div class="spinner"></div>
+  </div>
+</div>
+<!-- Preloader End -->
+  <header class="header">
+    <div class="container nav-container">
+     <a href="index.html" class="logo">
+  <img src="assets/lo.jpeg" alt="HOTEL ARYAN Logo" class="logo-img" />
+  <div class="logo-text">
+    <h2>HOTEL ARYAN</h2>
+    <span>Residency & Banquet Hall</span>
+  </div>
+</a>
+      <nav class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="rooms.html">Rooms</a>
+  <a href="banquet.html">Banquet</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+      <div class="nav-actions">
+        <button onclick="openBanquetModal()" class="btn btn-primary">Enquire Now</button>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Banquet Hall & Events</h1>
+      <p>Host memorable celebrations and corporate events</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="banquet-grid">
+        <div class="banquet-details">
+          <h2>Grand Banquet Space</h2>
+          <p>Our banquet hall is fully equipped to handle medium to large gatherings with dedicated parking and high-speed Wi-Fi facilities.</p>
+          
+          <ul class="feature-list">
+            <li><i class="fas fa-users"></i> <strong>Capacity:</strong> Up to 250 guests</li>
+            <li><i class="fas fa-birthday-cake"></i> <strong>Ideal For:</strong> Birthday Parties</li>
+            <li><i class="fas fa-briefcase"></i> <strong>Corporate:</strong> Business & Community Meetings</li>
+            <li><i class="fas fa-wifi"></i> <strong>Amenities:</strong> Free Wi-Fi & Parking Space</li>
+          </ul>
+
+          <div style="margin-top: 30px;">
+            <button onclick="openBanquetModal()" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Enquire Now</button>
+          </div>
+        </div>
+        <div class="banquet-image">
+          <div style="border-radius: 16px; overflow: hidden; max-width: 520px; width: 100%; height: 350px;">
+    <img id="img-feature-slider" src="killer/photo 1.jpeg" alt="Hotel Aryan" onclick="openFeatureSlider()" style="cursor: pointer; width: 100%; height: 100%; object-fit: cover; display: block;" />
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>HOTEL ARYAN</h3>
+        <p>Residency & Banquet Hall</p>
+        <p><i class="fas fa-star" style="color: #facc15;"></i> Rated 4.6/5 on Google</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="banquet.html">Banquet Hall</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Uma Nagar, Rasulpur Saidpur Bazid, Bihar 842004, India</p>
+        <p><i class="fas fa-phone"></i> +91 7717760120</p>
+        <p><i class="fas fa-envelope"></i> hotelaryanresidency1@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 HOTEL ARYAN Residency & Banquet Hall. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="banquetModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal('banquetModal')">&times;</span>
+      <h3>Banquet Hall Enquiry</h3>
+      <form id="banquetEnquiryForm" onsubmit="handleBanquetEnquiry(event)">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="bq_name" required placeholder="Your full name" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Event Date</label>
+            <input type="date" id="bq_date" required />
+          </div>
+          <div class="form-group">
+            <label>Event Type</label>
+            <select id="bq_type" required>
+              <option value="Birthday Party">Birthday Party</option>
+              <option value="Meeting">Meeting</option>
+             <option value="Marriage">Marriage</option>
+            <option value="Anniversary">Anniversary</option>
+              <option value="corporate Meeting">Corporate Meeting</option>
+              <option value="Other Event">Other Event</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Number of Guests (Up to 250)</label>
+            <input type="number" id="bq_guests" max="250" required placeholder="e.g. 150" />
+          </div>
+          <div class="form-group">
+            <label>Preferred Hall</label>
+            <input type="text" id="bq_hall" value="Main Banquet Hall" required />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary full-width"><i class="fab fa-whatsapp"></i> Enquire via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+  <!-- Floating Social & Contact Widget -->
+<div class="floating-actions">
+  <a href="https://wa.me/917717760120" target="_blank" class="float-btn float-whatsapp" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+917717760120" class="float-btn float-call" title="Call Now">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="https://www.instagram.com/hotelaryanmuz?igsi=am96bTQ1dWliOXE4" target="_blank" class="float-btn float-insta" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.facebook.com/share/1Bmkhd5gd1/?mibextid=wwXIfr" target="_blank" class="float-btn float-fb" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</div>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+  <!-- Modal Popup (Sirf Cross Button) -->
+<div id="featureModal" style="display: none; position: fixed; inset: 0; z-index: 999999; background: rgba(0,0,0,0.9); justify-content: center; align-items: center;">
+    <span onclick="closeFeatureModal()" style="position: absolute; top: 20px; right: 30px; color: #fff; font-size: 45px; font-weight: bold; cursor: pointer; user-select: none;">&times;</span>
+    <img id="modalFeatureImg" src="" style="max-width: 85%; max-height: 80vh; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.8);">
+</div>
+
+<script>
+// Aapki chuni hui photos
+var featureImages = [
+    "killer/photo 1.jpeg",
+    "killer/photo 2.jpeg",
+    "killer/photo 9.jpg",
+    "killer/photo 14.jpg",
+    "killer/photo 15.jpg",
+    "killer/photo 30.jpeg"
+];
+
+var featIdx = 0;
+var isFeatModalOpen = false;
+
+// Chhota card har 2.5 second par automatically badlega
+setInterval(function() {
+    featIdx = (featIdx + 1) % featureImages.length;
+    
+    // Page par photo change hogi
+    var smallImg = document.getElementById('img-feature-slider');
+    if (smallImg) {
+        smallImg.src = featureImages[featIdx];
+    }
+    
+    // Agar popup open hai toh wahan bhi sath me update hogi
+    if (isFeatModalOpen) {
+        var modalImg = document.getElementById('modalFeatureImg');
+        if (modalImg) {
+            modalImg.src = featureImages[featIdx];
+        }
+    }
+}, 2500);
+
+// Click karne par popup open hoga
+function openFeatureSlider() {
+    isFeatModalOpen = true;
+    var modal = document.getElementById('featureModal');
+    var modalImg = document.getElementById('modalFeatureImg');
+    
+    if (modal && modalImg) {
+        modalImg.src = featureImages[featIdx];
+        modal.style.display = 'flex';
+    }
+}
+
+// Cross button se band karne ke liye
+function closeFeatureModal() {
+    isFeatModalOpen = false;
+    var modal = document.getElementById('featureModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+</script>
+</body>
+</html>

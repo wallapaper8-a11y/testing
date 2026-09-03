@@ -1,0 +1,140 @@
+@media (max-width: 900px) {
+  .banquet-grid, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.nav-active {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 768px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .logo-text span {
+    font-size: 0.65rem;
+  }
+}
+/* ===================================================
+   Mobile Responsive Styles (Gallery, Modal & Videos)
+=================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Gallery Grid on Mobile */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 0 10px !important;
+    }
+
+    .gallery-item {
+        height: 160px !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+    }
+
+    .gallery-item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* Lightbox Modal on Mobile */
+    #customLightbox, #galleryModal, #imageModal, #featureModal {
+        padding: 10px !important;
+    }
+
+    /* Fullscreen Modal Image */
+    .lightbox-img, #galleryModalImg, #modalImg, #modalFeatureImg {
+        max-width: 95vw !important;
+        max-height: 65vh !important;
+        border-radius: 6px !important;
+    }
+
+    /* Modal Navigation Buttons (Thumb-friendly) */
+    .prev-btn, .next-btn,
+    #customLightbox button, #galleryModal button {
+        width: 42px !important;
+        height: 42px !important;
+        font-size: 24px !important;
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .prev-btn, #customLightbox button:nth-of-type(1), #galleryModal button:nth-of-type(1) {
+        left: 10px !important;
+    }
+
+    .next-btn, #customLightbox button:nth-of-type(2), #galleryModal button:nth-of-type(2) {
+        right: 10px !important;
+    }
+
+    /* Close (Cut) Button */
+    .close-btn, #customLightbox span, #galleryModal span, #imageModal span, #featureModal span {
+        top: 15px !important;
+        right: 20px !important;
+        font-size: 38px !important;
+    }
+
+    /* Video Section on Mobile */
+    video {
+        height: 200px !important;
+    }
+
+    /* View More Button */
+    #loadMoreBtn {
+        width: 80% !important;
+        padding: 14px 0 !important;
+        font-size: 15px !important;
+    }
+}
+
+/* Chhote mobile screens (Below 480px) */
+@media screen and (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .gallery-item {
+        height: 200px !important;
+    }
+}

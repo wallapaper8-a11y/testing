@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms - HOTEL ARYAN Residency & Banquet Hall</title>
+  <link rel="icon" type="image/jpeg" href="assets/lo.jpeg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+<!-- Preloader Start -->
+<div id="preloader">
+  <div class="loader-content">
+    <h1 class="hotel-title" id="typewriter-text"></h1>
+    <p class="hotel-sub">Residency & Banquet Hall</p>
+    <div class="spinner"></div>
+  </div>
+</div>
+<!-- Preloader End -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+  <img src="assets/lo.jpeg" alt="HOTEL ARYAN Logo" class="logo-img" />
+  <div class="logo-text">
+    <h2>HOTEL ARYAN</h2>
+    <span>Residency & Banquet Hall</span>
+  </div>
+</a>
+     <nav class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="rooms.html">Rooms</a>
+  <a href="banquet.html">Banquet</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+      <div class="nav-actions">
+        <a href="javascript:void(0)" onclick="openBookingModal('AC Room')" class="btn btn-primary">Book Now</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Rooms & Tariff</h1>
+      <p>Clean and peaceful accommodation with Free Wi-Fi & Parking</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="room-grid">
+        <div class="room-card">
+          <img id="img-ac" src="" alt="AC Room" onclick="openGallery('ac')">
+          <div class="room-info">
+            <h3>AC Room</h3>
+            <p class="room-price">₹1,800 <span>/ night</span></p>
+            <div class="room-amenities">
+              <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+              <span><i class="fas fa-parking"></i> Parking</span>
+            </div>
+            <button onclick="openBookingModal('AC Room')" class="btn btn-primary full-width">Book Now</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img id="img-nonAc" src="" alt="Non-AC Room" onclick="openGallery('nonAc')">
+          <div class="room-info">
+            <h3>Non-AC Room</h3>
+            <p class="room-price">₹1,300 <span>/ night</span></p>
+            <div class="room-amenities">
+              <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+              <span><i class="fas fa-parking"></i> Parking</span>
+            </div>
+            <button onclick="openBookingModal('Non-AC Room')" class="btn btn-primary full-width">Book Now</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img id="img-doubleBed" src="" alt="Double Bed Non-AC Room" onclick="openGallery('doubleBed')">
+          <div class="room-info">
+            <h3>Double Bed Non-AC Room</h3>
+            <p class="room-price">₹1,000 <span>/ night</span></p>
+            <div class="room-amenities">
+              <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+              <span><i class="fas fa-parking"></i> Parking</span>
+            </div>
+            <button onclick="openBookingModal('Double Bed Non-AC Room')" class="btn btn-primary full-width">Book Now</button>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <img id="img-normal" src="" alt="Normal Room" onclick="openGallery('normal')">
+          <div class="room-info">
+            <h3>Normal Room</h3>
+            <p class="room-price">₹800 <span>/ night</span></p>
+            <div class="room-amenities">
+              <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+              <span><i class="fas fa-parking"></i> Parking</span>
+            </div>
+            <button onclick="openBookingModal('Normal Room')" class="btn btn-primary full-width">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>HOTEL ARYAN</h3>
+        <p>Residency & Banquet Hall</p>
+        <p><i class="fas fa-star" style="color: #facc15;"></i> Rated 4.6/5 on Google</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="banquet.html">Banquet Hall</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Uma Nagar, Rasulpur Saidpur Bazid, Bihar 842004, India</p>
+        <p><i class="fas fa-phone"></i> +91 7717760120</p>
+        <p><i class="fas fa-envelope"></i> hotelaryanresidency1@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 HOTEL ARYAN Residency & Banquet Hall. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal('bookingModal')">&times;</span>
+      <h3>Book a Room</h3>
+      <form id="roomBookingForm" onsubmit="handleRoomBooking(event)">
+        <div class="form-group">
+          <label>Guest Name</label>
+          <input type="text" id="b_name" required placeholder="Your full name" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Check-in Date</label>
+            <input type="date" id="b_checkin" required />
+          </div>
+          <div class="form-group">
+            <label>Check-out Date</label>
+            <input type="date" id="b_checkout" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Number of Guests</label>
+            <input type="number" id="b_guests" min="1" value="1" required />
+          </div>
+          <div class="form-group">
+            <label>Room Type</label>
+            <select id="b_roomtype" required>
+              <option value="AC Room">AC Room (₹1,800)</option>
+              <option value="Non-AC Room">Non-AC Room (₹1,300)</option>
+              <option value="2 No. Non-AC Room">2 No. Non-AC Room (₹1,000)</option>
+              <option value="Normal Room">Normal Room (₹800)</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary full-width"><i class="fab fa-whatsapp"></i> Book via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+  <!-- Floating Social & Contact Widget -->
+<div class="floating-actions">
+  <a href="https://wa.me/917717760120" target="_blank" class="float-btn float-whatsapp" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+917717760120" class="float-btn float-call" title="Call Now">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="https://www.instagram.com/hotelaryanmuz?igsi=am96bTQ1dWliOXE4" target="_blank" class="float-btn float-insta" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.facebook.com/share/1Bmkhd5gd1/?mibextid=wwXIfr" target="_blank" class="float-btn float-fb" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</div>
+
+<div id="imageModal" class="modal" style="display: none; position: fixed; z-index: 999999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.9); justify-content: center; align-items: center;">
+  <span class="close" onclick="closeModal()" style="position: absolute; top: 20px; right: 35px; color: #fff; font-size: 45px; cursor: pointer; user-select: none;">&times;</span>
+  <button class="prev" onclick="changeSlide(-1)" style="position: absolute; left: 25px; color: #fff; font-size: 40px; background: rgba(0,0,0,0.5); border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">&#10094;</button>
+  <img id="modalImg" src="" alt="Room View" style="max-width: 85%; max-height: 80vh; border-radius: 8px; box-shadow: 0 0 20px rgba(255,255,255,0.2);">
+  <button class="next" onclick="changeSlide(1)" style="position: absolute; right: 25px; color: #fff; font-size: 40px; background: rgba(0,0,0,0.5); border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">&#10095;</button>
+</div>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/rooms-data.js"></script>
+<script src="js/rooms-data.js"></script>
+<div id="imageModal" style="display: none; position: fixed; z-index: 999999; inset: 0; background: rgba(0,0,0,0.9); justify-content: center; align-items: center;">
+  <span onclick="closeModal()" style="position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; cursor: pointer;">&times;</span>
+  <button onclick="changeSlide(-1)" style="position: absolute; left: 20px; color: #fff; font-size: 30px; background: rgba(0,0,0,0.6); border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">&#10094;</button>
+  <img id="modalImg" src="" style="max-width: 85%; max-height: 80vh; border-radius: 8px;">
+  <button onclick="changeSlide(1)" style="position: absolute; right: 20px; color: #fff; font-size: 30px; background: rgba(0,0,0,0.6); border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">&#10095;</button>
+</div>
+
+<script src="js/rooms-data.js"></script>
+<script>
+
+
+  function openGallery(roomType) {
+    currentRoom = roomType;
+    currentIndex = 0;
+    document.getElementById('imageModal').style.display = 'flex';
+    updateImage();
+  }
+
+  function updateImage() {
+    var room = window.roomsData.find(function(r) { return r.id === currentRoom; });
+    if (room && room.images[currentIndex]) {
+      document.getElementById('modalImg').src = room.images[currentIndex];
+    }
+  }
+
+  function changeSlide(direction) {
+    var room = window.roomsData.find(function(r) { return r.id === currentRoom; });
+    if (!room) return;
+    currentIndex += direction;
+    if (currentIndex >= room.images.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = room.images.length - 1;
+    updateImage();
+  }
+
+  function closeModal() {
+  document.getElementById('imageModal').style.display = 'none';
+}
+</script>
+</body>
+</html>
