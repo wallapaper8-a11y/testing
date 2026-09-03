@@ -1146,3 +1146,8 @@ input:focus, select:focus {
 .next { right: 30px; }
 .close { top: 20px; right: 30px; font-size: 40px; background: transparent; }
 .prev:hover, .next:hover { background: rgba(0,0,0,0.8); }
+
+.modal-image, 
+.slider-img {
+  transition: opacity 0.2s ease-in-out !important;
+}
