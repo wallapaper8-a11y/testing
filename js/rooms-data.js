@@ -48,7 +48,9 @@ window.roomsData = [
             "killer/T2.png",
             "killer/photo 6.jpg",
             "killer/photo 28.jpg",
-            "killer/photo 23.jpg"
+            "killer/photo 23.jpg",
+            "killer/photo 10.jpg"
+
         ]
     }
 ];
